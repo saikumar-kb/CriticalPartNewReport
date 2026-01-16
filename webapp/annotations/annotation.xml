@@ -1,0 +1,88 @@
+<edmx:Edmx xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/UI.xml">
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="/sap/opu/odata/sap/ZUI_CRIT_PART_REP/$metadata">
+        <edmx:Include Namespace="cds_zui_crit_part_rep"/>
+    </edmx:Reference>
+    <edmx:DataServices>
+        <Schema xmlns="http://docs.oasis-open.org/odata/ns/edm" Namespace="local">
+            <Annotations Target="cds_zui_crit_part_rep.ZCE_CRITICALPART_REPORTType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="Material"/>
+                            <PropertyValue Property="Label" String="{@i18n>product}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MaterialDescription"/>
+                            <PropertyValue Property="Label" String="{@i18n>productDescription}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="type"/>
+                            <PropertyValue Property="Label" String="{@i18n>orderType}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="ordernumber"/>
+                            <PropertyValue Property="Label" String="{@i18n>orderNumber}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="duedate"/>
+                            <PropertyValue Property="Label" String="{@i18n>dueDate}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="StorageLocation"/>
+                            <PropertyValue Property="Label" String="{@i18n>storageLocation}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="MatlWrhsStkQtyInMatlBaseUnit"/>
+                            <PropertyValue Property="Label" String="{@i18n>openStock}"/>
+                        </Record>
+                        <Record Type="UI.DataField"  >
+                            <PropertyValue Property="Value" Path="demand" />
+                            <PropertyValue Property="Label" String="{@i18n>demand}"/>
+                        </Record>
+                        <Record Type="UI.DataField"  >
+                            <PropertyValue Property="Value" Path="CalculatedQty" />
+                            <PropertyValue Property="Label" String="{@i18n>calculatedQuantity}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="OrderQuantity"/>
+                            <PropertyValue Property="Label" String="{@i18n>orderQuantity}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="StorageLocationName"/>
+                            <PropertyValue Property="Label" String="{@i18n>storageLocationName}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PurchasingGroup"/>
+                            <PropertyValue Property="Label" String="{@i18n>purchasingGroup}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PurchasingGroupName"/>
+                            <PropertyValue Property="Label" String="{@i18n>purchasingGroupName}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PurchaseOrder"/>
+                            <PropertyValue Property="Label" String="{@i18n>purchaseOrder}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PurchaseOrderItem"/>
+                            <PropertyValue Property="Label" String="{@i18n>purchaseOrderItem}"/>
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="PendingQty"/>
+                            <PropertyValue Property="Label" String="{@i18n>pendingQuantity}"/>
+                        </Record>
+                        <Record Type="UI.DataField"  >
+                            <PropertyValue Property="Value" Path="DeliveryDocumentBySupplier" />
+                            <PropertyValue Property="Label" String="{@i18n>trackingId}"/>
+                        </Record>
+                        
+                        
+                    </Collection>
+                </Annotation>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
